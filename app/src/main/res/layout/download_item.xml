@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#F2F2F2" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dip"
+        android:background="#F14400" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@+id/logo"
+        android:text="我是标题"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dip"
+        android:layout_marginTop="24dip"
+        android:layout_toRightOf="@+id/title"
+        android:text="当前进度: 0%"
+        android:textColor="#334455"
+        android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="16dip"
+        android:layout_toLeftOf="@+id/operator"
+        android:layout_toRightOf="@+id/logo" />
+
+    <Button
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dip"
+        android:text="开始" />
+
+    <TextView
+        android:id="@+id/tvSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/logo"
+        android:text="当前速度: 100kb/b"
+        android:textColor="#F14400"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F2F2" />
+</RelativeLayout>
