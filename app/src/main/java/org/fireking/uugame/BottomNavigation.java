@@ -81,7 +81,6 @@ public class BottomNavigation extends LinearLayout {
         public int localImageId;
         public int localImageCheckedId;
         public String localItemName;
-        public boolean isChecked;
 
         public NavigationItem(int localImageId, int localImageCheckedId, String localItemName) {
             this.localImageId = localImageId;
