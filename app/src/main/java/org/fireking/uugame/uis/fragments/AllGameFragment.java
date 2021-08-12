@@ -44,31 +44,31 @@ public class AllGameFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         //错误的请求地址
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk22.apk").setStoreFileName("任务1"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w222.apk").setStoreFileName("任务1"));
 
         //高清壁纸
         requestList.add(new DownloadRequest("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546850344680&di=f50b2b9f76b79f1fd1f74531230337c6&imgtype=0&src=http%3A%2F%2Fs16.sinaimg.cn%2Forignal%2F3ea244b9g79e6249ed12f%26690").setStoreFileName("高清壁纸"));
 
         //正常请求地址
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk1.apk").setStoreFileName("任务2"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk2.apk").setStoreFileName("任务3"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk3.apk").setStoreFileName("任务4"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk4.apk").setStoreFileName("任务5"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk5.apk").setStoreFileName("任务6"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk6.apk").setStoreFileName("任务7"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk7.apk").setStoreFileName("任务8"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk8.apk").setStoreFileName("任务9"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk9.apk").setStoreFileName("任务10"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk10.apk").setStoreFileName("任务11"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk11.apk").setStoreFileName("任务12"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk12.apk").setStoreFileName("任务13"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk13.apk").setStoreFileName("任务14"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk14.apk").setStoreFileName("任务15"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk15.apk").setStoreFileName("任务16"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk16.apk").setStoreFileName("任务17"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk17.apk").setStoreFileName("任务18"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk18.apk").setStoreFileName("任务19"));
-        requestList.add(new DownloadRequest("http://47.100.226.225:8080/apks/apk19.apk").setStoreFileName("任务20"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w1.apk").setStoreFileName("任务2"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w2.apk").setStoreFileName("任务3"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w3.apk").setStoreFileName("任务4"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w4.apk").setStoreFileName("任务5"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w5.apk").setStoreFileName("任务6"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w6.apk").setStoreFileName("任务7"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w7.apk").setStoreFileName("任务8"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w8.apk").setStoreFileName("任务9"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w9.apk").setStoreFileName("任务10"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w10.apk").setStoreFileName("任务11"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w11.apk").setStoreFileName("任务12"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w12.apk").setStoreFileName("任务13"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w13.apk").setStoreFileName("任务14"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w14.apk").setStoreFileName("任务15"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w15.apk").setStoreFileName("任务16"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w16.apk").setStoreFileName("任务17"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w17.apk").setStoreFileName("任务18"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w18.apk").setStoreFileName("任务19"));
+        requestList.add(new DownloadRequest("http://101.34.101.222:8080/download/w19.apk").setStoreFileName("任务20"));
 
         //做一个数据同步
         UUDownloadManager.getInstance().dataSynchronization(requestList);
